@@ -44,7 +44,11 @@ function loadImagemAnt(img){
 
 function loadImagemProx(img){
 	if(img>x){
-		window.location.href = "https://davisouzaabc.github.io/capitulo2.html";
+	if (confirm("Ir para o próximo capítulo ?") == true) {
+        window.location.href = "https://davisouzaabc.github.io/capitulo2.html";
+    } else {
+        txt = "Você cancelou!";
+    }
 	}else{
 	carregar = new Image();
 	carregar.src = img;
@@ -86,7 +90,7 @@ function verificaCarregamento(){
 	</div>
   </li>
 </ul>
-
+<h1>Capítulo 1</h1>
 <p class="aviso">Use a seta esquerda para Ant. e direita(ou clique na img) para Prox.</p>
 <div id="pagina" onclick="cont++;loadImagemProx(cont);">
 </div>
