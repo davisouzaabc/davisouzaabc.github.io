@@ -88,15 +88,14 @@ footer, a{
 	height:45%;
 	width:45%;
 	float: left;
+	align:left;
 }
 .texto{
 	position:relative;
 	left:10px;
 	font-size:16px;
 }
-h1{
-	margin-left: auto;
-    margin-right: auto;
-    width: 45em;
-	color:white;
+.titulo{
+	text-align:center;
+	color:#860000;
 }
